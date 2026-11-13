@@ -1,0 +1,193 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#174d38">
+    <title>Shafique Tailors | Book an Appointment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="booking.js" defer></script>
+</head>
+<body>
+    <main class="page-shell">
+        <div class="booking-card">
+            <section class="intro-panel" aria-labelledby="page-title">
+                <div class="content">
+                    <p class="eyebrow">GENTS &amp; TRADITIONAL WEAR</p>
+                    <h1 id="page-title">Shafique Tailors</h1>
+                    <p class="description">Specialist in Gents &amp; Traditional Wear.<br>Quality stitching — perfect fitting.<br><br><a class="shop-phone" href="tel:+917780139573">Call: 7780139573</a><br>Ramannapet, near Mother Teresa School,<br>Nalgonda–Bhongir Road.</p>
+                    <a class="book-link" href="#appointment">Book your slot <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="visual-panel" aria-hidden="true">
+                    <div class="pattern"></div>
+                    <div class="badge">QUALITY STITCHING <span>·</span> PERFECT FITTING</div>
+                </div>
+            </section>
+
+            <section class="form-panel" id="appointment" aria-labelledby="form-title">
+                <form id="booking-form" action="#" method="post" data-whatsapp-number="917780139573">
+                    <div class="form-heading">
+                        <p class="eyebrow">LET’S GET STARTED</p>
+                        <h2 id="form-title">Book an appointment</h2>
+                        <p>Share your details and preferred time.</p>
+                    </div>
+
+                    <div class="field-grid">
+                        <div class="field">
+                            <label for="name">Full name</label>
+                            <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">Phone number</label>
+                            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Your phone number" required>
+                        </div>
+
+                        <div class="field field-wide">
+                            <label for="email">Email address <span class="optional">(optional)</span></label>
+                            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+                        </div>
+
+                        <div class="field field-wide">
+                            <label for="service">Service</label>
+                            <select id="service" name="service" required>
+                                <option value="" selected disabled>Choose a service</option>
+                                <option value="alteration">Clothing alteration</option>
+                                <option value="custom">Custom tailoring</option>
+                                <option value="measurement">Measurements</option>
+                                <option value="repair">Repair</option>
+                            </select>
+                        </div>
+
+                        <div class="field field-wide">
+                            <fieldset class="outfit-field">
+                                <legend>Garment style <span class="optional">(select all that apply)</span></legend>
+                                <p class="choice-help">Choose the garment styles you want tailored.</p>
+                                <div class="choice-grid">
+                                    <label class="choice-option"><input type="checkbox" name="outfit" value="Kurta Pajama"><span class="choice-copy"><span>Kurta Pajama</span><span class="choice-price">₹600/-</span></span></label>
+                                    <label class="choice-option"><input type="checkbox" name="outfit" value="Kali Kurta Pajama"><span class="choice-copy"><span>Kali Kurta Pajama</span><span class="choice-price">₹700/-</span></span></label>
+                                    <label class="choice-option"><input type="checkbox" name="outfit" value="Pathani"><span class="choice-copy"><span>Pathani</span><span class="choice-price">₹800/-</span></span></label>
+                                    <label class="choice-option"><input type="checkbox" name="outfit" value="Jubbah"><span class="choice-copy"><span>Jubbah</span><span class="choice-price">₹1,000/-</span></span></label>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="field">
+                            <label for="date">Preferred date</label>
+                            <input id="date" name="date" type="date" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="time">Preferred time</label>
+                            <input id="time" name="time" type="time" required>
+                        </div>
+
+                        <div class="field field-wide">
+                            <label for="details">Style details or notes <span class="optional">(optional)</span></label>
+                            <textarea id="details" name="details" rows="3" placeholder="Tell us the variety, fabric, colour, quantity, measurements, or other details"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit">Request booking <span aria-hidden="true">→</span></button>
+                    <p class="form-note">Your appointment time will be confirmed by the tailor.</p>
+                    <p class="form-note" id="booking-status" role="status" aria-live="polite"></p>
+                    <a class="whatsapp-link" id="whatsapp-link" href="#" target="_blank" rel="noopener" hidden>Open WhatsApp booking message</a>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
+ <script src="booking.js" defer></script>
+</head>
+<body>
+    <main class="page-shell">
+        <div class="booking-card">
+            <section class="intro-panel" aria-labelledby="page-title">
+                <div class="content">
+                    <p class="eyebrow">GENTS &amp; TRADITIONAL WEAR</p>
+                    <h1 id="page-title">Shafique Tailors</h1>
+                    <p class="description">Specialist in Gents &amp; Traditional Wear.<br>Quality stitching — perfect fitting.<br><br><a class="shop-phone" href="tel:+917780139573">Call: 7780139573</a><br>Ramannapet, near Mother Teresa School,<br>Nalgonda–Bhongir Road.</p>
+                    <a class="book-link" href="#appointment">Book your slot <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="visual-panel" aria-hidden="true">
+                    <div class="pattern"></div>
+                    <div class="badge">QUALITY STITCHING <span>·</span> PERFECT FITTING</div>
+                </div>
+            </section>
+
+            <section class="form-panel" id="appointment" aria-labelledby="form-title">
+                <form id="booking-form" action="#" method="post" data-whatsapp-number="917780139573">
+                    <div class="form-heading">
+                        <p class="eyebrow">LET’S GET STARTED</p>
+                        <h2 id="form-title">Book an appointment</h2>
+                        <p>Share your details and preferred time.</p>
+                    </div>
+
+                    <div class="field-grid">
+                        <div class="field">
+                            <label for="name">Full name</label>
+                            <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">Phone number</label>
+                            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Your phone number" required>
+                        </div>
+
+                        <div class="field field-wide">
+                            <label for="email">Email address <span class="optional">(optional)</span></label>
+                            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+                        </div>
+
+                        <div class="field field-wide">
+                            <label for="service">Service</label>
+                            <select id="service" name="service" required>
+                                <option value="" selected disabled>Choose a service</option>
+                                <option value="alteration">Clothing alteration</option>
+                                <option value="custom">Custom tailoring</option>
+                                <option value="measurement">Measurements</option>
+                                <option value="repair">Repair</option>
+                            </select>
+                        </div>
+
+                        <div class="field field-wide">
+                            <fieldset class="outfit-field">
+                                <legend>Garment style <span class="optional">(select all that apply)</span></legend>
+                                <p class="choice-help">Choose the garment styles you want tailored.</p>
+                                <div class="choice-grid">
+                                    <label class="choice-option"><input type="checkbox" name="outfit" value="Kurta Pajama"><span class="choice-copy"><span>Kurta Pajama</span><span class="choice-price">₹600/-</span></span></label>
+                                    <label class="choice-option"><input type="checkbox" name="outfit" value="Kali Kurta Pajama"><span class="choice-copy"><span>Kali Kurta Pajama</span><span class="choice-price">₹700/-</span></span></label>
+                                    <label class="choice-option"><input type="checkbox" name="outfit" value="Pathani"><span class="choice-copy"><span>Pathani</span><span class="choice-price">₹800/-</span></span></label>
+                                    <label class="choice-option"><input type="checkbox" name="outfit" value="Jubbah"><span class="choice-copy"><span>Jubbah</span><span class="choice-price">₹1,000/-</span></span></label>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="field">
+                            <label for="date">Preferred date</label>
+                            <input id="date" name="date" type="date" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="time">Preferred time</label>
+                            <input id="time" name="time" type="time" required>
+                        </div>
+
+                        <div class="field field-wide">
+                            <label for="details">Style details or notes <span class="optional">(optional)</span></label>
+                            <textarea id="details" name="details" rows="3" placeholder="Tell us the variety, fabric, colour, quantity, measurements, or other details"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit">Request booking <span aria-hidden="true">→</span></button>
+                    <p class="form-note">Your appointment time will be confirmed by the tailor.</p>
+                    <p class="form-note" id="booking-status" role="status" aria-live="polite"></p>
+                    <a class="whatsapp-link" id="whatsapp-link" href="#" target="_blank" rel="noopener" hidden>Open WhatsApp booking message</a>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
+
